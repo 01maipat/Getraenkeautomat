@@ -1,0 +1,7 @@
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\bin\Debug\Getränkeautomat.exe
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\bin\Debug\Getränkeautomat.pdb
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\obj\x86\Debug\Getränkeautomat.Form1.resources
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\obj\x86\Debug\Getränkeautomat.Properties.Resources.resources
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\obj\x86\Debug\Getränkeautomat.csproj.GenerateResource.Cache
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\obj\x86\Debug\Getränkeautomat.exe
+C:\Users\Patrick Mairhofer\Desktop\Getränkeautomat\Getränkeautomat\Getränkeautomat\obj\x86\Debug\Getränkeautomat.pdb

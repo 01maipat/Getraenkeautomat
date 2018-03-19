@@ -42,6 +42,13 @@
             this.lbl_sprite = new System.Windows.Forms.Label();
             this.lbl_water = new System.Windows.Forms.Label();
             this.lbl_cola = new System.Windows.Forms.Label();
+            this.lbl_kontostand = new System.Windows.Forms.Label();
+            this.btn_20c = new System.Windows.Forms.Button();
+            this.btn_100c = new System.Windows.Forms.Button();
+            this.btn_200c = new System.Windows.Forms.Button();
+            this.btn_50c = new System.Windows.Forms.Button();
+            this.btn_5c = new System.Windows.Forms.Button();
+            this.btn_10c = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_fanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icetea)).BeginInit();
@@ -53,10 +60,12 @@
             // lbl_Preis
             // 
             this.lbl_Preis.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.lbl_Preis.Location = new System.Drawing.Point(178, 9);
+            this.lbl_Preis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Preis.Location = new System.Drawing.Point(178, 245);
             this.lbl_Preis.Name = "lbl_Preis";
             this.lbl_Preis.Size = new System.Drawing.Size(131, 54);
             this.lbl_Preis.TabIndex = 0;
+            this.lbl_Preis.Click += new System.EventHandler(this.lbl_Preis_Click);
             // 
             // pb_cola
             // 
@@ -137,7 +146,6 @@
             this.lbl_fanta.Name = "lbl_fanta";
             this.lbl_fanta.Size = new System.Drawing.Size(35, 28);
             this.lbl_fanta.TabIndex = 8;
-            this.lbl_fanta.Click += new System.EventHandler(this.lbl_fanta_Click);
             // 
             // lbl_icetea
             // 
@@ -146,7 +154,6 @@
             this.lbl_icetea.Name = "lbl_icetea";
             this.lbl_icetea.Size = new System.Drawing.Size(35, 27);
             this.lbl_icetea.TabIndex = 9;
-            this.lbl_icetea.Click += new System.EventHandler(this.lbl_icetea_Click);
             // 
             // lal_fanta
             // 
@@ -179,7 +186,75 @@
             this.lbl_cola.Name = "lbl_cola";
             this.lbl_cola.Size = new System.Drawing.Size(35, 29);
             this.lbl_cola.TabIndex = 13;
-            this.lbl_cola.Click += new System.EventHandler(this.lbl_cola_Click);
+            // 
+            // lbl_kontostand
+            // 
+            this.lbl_kontostand.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lbl_kontostand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_kontostand.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lbl_kontostand.Location = new System.Drawing.Point(180, 190);
+            this.lbl_kontostand.Name = "lbl_kontostand";
+            this.lbl_kontostand.Size = new System.Drawing.Size(129, 23);
+            this.lbl_kontostand.TabIndex = 14;
+            this.lbl_kontostand.Text = "Kontostand = 0.00€";
+            // 
+            // btn_20c
+            // 
+            this.btn_20c.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_20c.Location = new System.Drawing.Point(279, 12);
+            this.btn_20c.Name = "btn_20c";
+            this.btn_20c.Size = new System.Drawing.Size(30, 30);
+            this.btn_20c.TabIndex = 15;
+            this.btn_20c.Text = "20c";
+            this.btn_20c.UseVisualStyleBackColor = true;
+            // 
+            // btn_100c
+            // 
+            this.btn_100c.Location = new System.Drawing.Point(243, 48);
+            this.btn_100c.Name = "btn_100c";
+            this.btn_100c.Size = new System.Drawing.Size(30, 30);
+            this.btn_100c.TabIndex = 16;
+            this.btn_100c.Text = "1€";
+            this.btn_100c.UseVisualStyleBackColor = true;
+            // 
+            // btn_200c
+            // 
+            this.btn_200c.Location = new System.Drawing.Point(279, 48);
+            this.btn_200c.Name = "btn_200c";
+            this.btn_200c.Size = new System.Drawing.Size(30, 30);
+            this.btn_200c.TabIndex = 17;
+            this.btn_200c.Text = "2€";
+            this.btn_200c.UseVisualStyleBackColor = true;
+            // 
+            // btn_50c
+            // 
+            this.btn_50c.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_50c.Location = new System.Drawing.Point(207, 48);
+            this.btn_50c.Name = "btn_50c";
+            this.btn_50c.Size = new System.Drawing.Size(30, 30);
+            this.btn_50c.TabIndex = 18;
+            this.btn_50c.Text = "50c";
+            this.btn_50c.UseVisualStyleBackColor = true;
+            // 
+            // btn_5c
+            // 
+            this.btn_5c.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_5c.Location = new System.Drawing.Point(207, 12);
+            this.btn_5c.Name = "btn_5c";
+            this.btn_5c.Size = new System.Drawing.Size(30, 30);
+            this.btn_5c.TabIndex = 19;
+            this.btn_5c.Text = "5c";
+            this.btn_5c.UseVisualStyleBackColor = true;
+            // 
+            // btn_10c
+            // 
+            this.btn_10c.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_10c.Location = new System.Drawing.Point(243, 12);
+            this.btn_10c.Name = "btn_10c";
+            this.btn_10c.Size = new System.Drawing.Size(30, 30);
+            this.btn_10c.TabIndex = 20;
+            this.btn_10c.Text = "10c";
+            this.btn_10c.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -187,6 +262,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(321, 522);
+            this.Controls.Add(this.btn_10c);
+            this.Controls.Add(this.btn_5c);
+            this.Controls.Add(this.btn_50c);
+            this.Controls.Add(this.btn_200c);
+            this.Controls.Add(this.btn_100c);
+            this.Controls.Add(this.btn_20c);
+            this.Controls.Add(this.lbl_kontostand);
             this.Controls.Add(this.lbl_cola);
             this.Controls.Add(this.lbl_water);
             this.Controls.Add(this.lbl_sprite);
@@ -226,6 +308,13 @@
         private System.Windows.Forms.Label lbl_sprite;
         private System.Windows.Forms.Label lbl_water;
         private System.Windows.Forms.Label lbl_cola;
+        private System.Windows.Forms.Label lbl_kontostand;
+        private System.Windows.Forms.Button btn_20c;
+        private System.Windows.Forms.Button btn_100c;
+        private System.Windows.Forms.Button btn_200c;
+        private System.Windows.Forms.Button btn_50c;
+        private System.Windows.Forms.Button btn_5c;
+        private System.Windows.Forms.Button btn_10c;
     }
 }
 

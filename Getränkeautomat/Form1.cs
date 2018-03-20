@@ -6,11 +6,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Getränkeautomat
 {
     public partial class Form1 : Form
     {
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"250623__kwahmah-02__throwing-can.wav");
+        System.Media.SoundPlayer playerwater = new System.Media.SoundPlayer(@"210437__soundscape-leuphana__20131202-bottle-falling-on-foor-zoomh4nxy.wav");
         MuenzeinwurfRestgeld geld = new MuenzeinwurfRestgeld();
         Random rnd = new Random();
         int cola = 999;
@@ -123,7 +126,6 @@ namespace Getränkeautomat
                 {
                     cola = rnd.Next(3, 8);
                 }
-                cola--;
                 if (cola == 0)
                 {
                     lbl_cola.BackColor = Color.Red;
@@ -134,6 +136,8 @@ namespace Getränkeautomat
                     lbl_cola.BackColor = Color.Lime;
                     geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+                    player.Play();
+                    cola--;
                 }
             }
             else
@@ -151,7 +155,6 @@ namespace Getränkeautomat
                 {
                     fanta = rnd.Next(3, 8);
                 }
-                fanta--;
                 if (fanta == 0)
                 {
                     lbl_fanta.BackColor = Color.Red;
@@ -162,6 +165,8 @@ namespace Getränkeautomat
                     lbl_fanta.BackColor = Color.Lime;
                     geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+                    player.Play();
+                    fanta--;
                 }
             }
             else
@@ -179,7 +184,6 @@ namespace Getränkeautomat
                 {
                     icetea = rnd.Next(3, 8);
                 }
-                icetea--;
                 if (icetea == 0)
                 {
                     lbl_icetea.BackColor = Color.Red;
@@ -190,6 +194,8 @@ namespace Getränkeautomat
                     lbl_icetea.BackColor = Color.Lime;
                     geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+                    player.Play();
+                    icetea--;
                 }
             }
             else
@@ -207,7 +213,6 @@ namespace Getränkeautomat
                 {
                     spezi = rnd.Next(3, 8);
                 }
-                spezi--;
                 if (spezi == 0)
                 {
                     lbl_spezi.BackColor = Color.Red;
@@ -218,6 +223,8 @@ namespace Getränkeautomat
                     lbl_spezi.BackColor = Color.Lime;
                     geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+                    player.Play();
+                    spezi--;
                 }
             }
             else
@@ -236,7 +243,6 @@ namespace Getränkeautomat
                 {
                     sprite = rnd.Next(3, 8);
                 }
-                sprite--;
                 if (sprite == 0)
                 {
                     lbl_sprite.BackColor = Color.Red;
@@ -247,6 +253,8 @@ namespace Getränkeautomat
                     lbl_sprite.BackColor = Color.Lime;
                     geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+                    player.Play();
+                    sprite--;
                 }
             }
             else
@@ -264,7 +272,6 @@ namespace Getränkeautomat
                 {
                     water = rnd.Next(3, 8);
                 }
-                water--;
                 if (water == 0)
                 {
                     lbl_water.BackColor = Color.Red;
@@ -275,6 +282,8 @@ namespace Getränkeautomat
                     lbl_water.BackColor = Color.Lime;
                     geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+                    playerwater.Play();
+                    water--;
                 }
             }
             else

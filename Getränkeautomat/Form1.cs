@@ -27,7 +27,7 @@ namespace Getränkeautomat
 
         private void pb_cola_Click(object sender, EventArgs e)
         {
-            produkt.preis = "1.20";
+            produkt.preis = 1.20;
             produkt.produkt = "Cola";
             lbl_Preis.Text = produkt.produkt + " = " + Convert.ToString(produkt.preis) + "€";
             lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
@@ -35,7 +35,7 @@ namespace Getränkeautomat
 
         private void pb_fanta_Click(object sender, EventArgs e)
         {
-            produkt.preis = "1.50";
+            produkt.preis = 1.50;
             produkt.produkt = "Fanta";
             lbl_Preis.Text = produkt.produkt + " = " + produkt.preis + "€";
             lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
@@ -43,7 +43,7 @@ namespace Getränkeautomat
 
         private void pb_icetea_Click(object sender, EventArgs e)
         {
-            produkt.preis = "1.80";
+            produkt.preis = 1.80;
             produkt.produkt = "IceTea";
             lbl_Preis.Text = produkt.produkt + " = " + produkt.preis + "€";
             lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
@@ -51,7 +51,7 @@ namespace Getränkeautomat
 
         private void pb_spezi_Click(object sender, EventArgs e)
         {
-            produkt.preis = "1.00";
+            produkt.preis = 1.10;
             produkt.produkt = "Spezi";
             lbl_Preis.Text = produkt.produkt + " = " + produkt.preis + "€";
             lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
@@ -59,7 +59,7 @@ namespace Getränkeautomat
 
         private void pb_sprite_Click(object sender, EventArgs e)
         {
-            produkt.preis = "1.60";
+            produkt.preis = 1.60;
             produkt.produkt = "Sprite";
             lbl_Preis.Text = produkt.produkt + " = " + produkt.preis +"€";
             lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
@@ -67,7 +67,7 @@ namespace Getränkeautomat
 
         private void pb_water_Click(object sender, EventArgs e)
         {
-            produkt.preis = "0.80";
+            produkt.preis = 0.80;
             produkt.produkt = "Wasser";
             lbl_Preis.Text = produkt.produkt + " = " + produkt.preis + "€";
             lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
@@ -116,7 +116,8 @@ namespace Getränkeautomat
 
         private void pb_cola_DoubleClick(object sender, EventArgs e)
         {
-            if (geld.getKontostand() - (Convert.ToDouble(produkt.preis) / 100) >= 0)
+            produkt.preis = 1.20;
+            if (geld.getKontostand() - Convert.ToDouble(produkt.preis) >= 0)
             {
                 if (cola == 999)
                 {
@@ -131,7 +132,7 @@ namespace Getränkeautomat
                 else
                 {
                     lbl_cola.BackColor = Color.Lime;
-                    geld.geldhinzufuegen((Convert.ToDouble(produkt.preis)/100) * -1);
+                    geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
                 }
             }
@@ -143,7 +144,8 @@ namespace Getränkeautomat
 
         private void pb_fanta_DoubleClick(object sender, EventArgs e)
         {
-            if (geld.getKontostand() - (Convert.ToDouble(produkt.preis)/100) >= 0)
+            produkt.preis = 1.50;
+            if (geld.getKontostand() - Convert.ToDouble(produkt.preis) >= 0)
             {
                 if (fanta == 999)
                 {
@@ -158,7 +160,7 @@ namespace Getränkeautomat
                 else
                 {
                     lbl_fanta.BackColor = Color.Lime;
-                    geld.geldhinzufuegen((Convert.ToDouble(produkt.preis) / 100) * -1);
+                    geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
                 }
             }
@@ -170,7 +172,8 @@ namespace Getränkeautomat
 
         private void pb_icetea_DoubleClick(object sender, EventArgs e)
         {
-            if (geld.getKontostand() - (Convert.ToDouble(produkt.preis) / 100) >= 0)
+            produkt.preis = 1.80;
+            if (geld.getKontostand() - Convert.ToDouble(produkt.preis) >= 0)
             {
                 if (icetea == 999)
                 {
@@ -185,7 +188,7 @@ namespace Getränkeautomat
                 else
                 {
                     lbl_icetea.BackColor = Color.Lime;
-                    geld.geldhinzufuegen((Convert.ToDouble(produkt.preis) / 100) * -1);
+                    geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
                 }
             }
@@ -197,7 +200,8 @@ namespace Getränkeautomat
 
         private void pb_spezi_DoubleClick(object sender, EventArgs e)
         {
-            if (geld.getKontostand() - (Convert.ToDouble(produkt.preis) / 100) >= 0)
+            produkt.preis = 1.10;
+            if (geld.getKontostand() - Convert.ToDouble(produkt.preis) >= 0)
             {
                 if (spezi == 999)
                 {
@@ -212,7 +216,7 @@ namespace Getränkeautomat
                 else
                 {
                     lbl_spezi.BackColor = Color.Lime;
-                    geld.geldhinzufuegen((Convert.ToDouble(produkt.preis) / 100) * -1);
+                    geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
                 }
             }
@@ -225,7 +229,8 @@ namespace Getränkeautomat
 
         private void pb_sprite_DoubleClick(object sender, EventArgs e)
         {
-            if (geld.getKontostand() - (Convert.ToDouble(produkt.preis)/100) >= 0)
+            produkt.preis = 1.60;
+            if (geld.getKontostand() - Convert.ToDouble(produkt.preis) >= 0)
             {
                 if (sprite == 999)
                 {
@@ -240,7 +245,7 @@ namespace Getränkeautomat
                 else
                 {
                     lbl_sprite.BackColor = Color.Lime;
-                    geld.geldhinzufuegen((Convert.ToDouble(produkt.preis) / 100) * -1);
+                    geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
                 }
             }
@@ -252,7 +257,8 @@ namespace Getränkeautomat
 
         private void pb_water_DoubleClick(object sender, EventArgs e)
         {
-            if (geld.getKontostand() - (Convert.ToDouble(produkt.preis) / 100) >= 0)
+            produkt.preis = 0.80;
+            if (geld.getKontostand() - Convert.ToDouble(produkt.preis) >= 0)
             {
                 if (water == 999)
                 {
@@ -267,7 +273,7 @@ namespace Getränkeautomat
                 else
                 {
                     lbl_water.BackColor = Color.Lime;
-                    geld.geldhinzufuegen((Convert.ToDouble(produkt.preis) / 100) * -1);
+                    geld.geldhinzufuegen(Convert.ToDouble(produkt.preis) * -1);
                     lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
                 }
             }

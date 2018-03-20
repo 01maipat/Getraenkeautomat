@@ -7,7 +7,7 @@ namespace Getränkeautomat
 {
     class Produkt
     {
-        public string preis;
+        public double preis;
         public string produkt;
         
     }

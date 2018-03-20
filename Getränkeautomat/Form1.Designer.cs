@@ -61,9 +61,9 @@
             // 
             this.lbl_Preis.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.lbl_Preis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Preis.Location = new System.Drawing.Point(178, 245);
+            this.lbl_Preis.Location = new System.Drawing.Point(180, 232);
             this.lbl_Preis.Name = "lbl_Preis";
-            this.lbl_Preis.Size = new System.Drawing.Size(131, 54);
+            this.lbl_Preis.Size = new System.Drawing.Size(129, 54);
             this.lbl_Preis.TabIndex = 0;
             this.lbl_Preis.Click += new System.EventHandler(this.lbl_Preis_Click);
             // 
@@ -204,11 +204,11 @@
             this.lbl_kontostand.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lbl_kontostand.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_kontostand.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbl_kontostand.Location = new System.Drawing.Point(180, 190);
+            this.lbl_kontostand.Location = new System.Drawing.Point(182, 190);
             this.lbl_kontostand.Name = "lbl_kontostand";
-            this.lbl_kontostand.Size = new System.Drawing.Size(129, 23);
+            this.lbl_kontostand.Size = new System.Drawing.Size(127, 23);
             this.lbl_kontostand.TabIndex = 14;
-            this.lbl_kontostand.Text = "Kontostand = 0.00€";
+            this.lbl_kontostand.Text = "Kontostand = 0€";
             this.lbl_kontostand.Click += new System.EventHandler(this.lbl_kontostand_Click);
             // 
             // btn_20c

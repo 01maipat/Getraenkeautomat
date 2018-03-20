@@ -38,7 +38,7 @@
             this.pb_water = new System.Windows.Forms.PictureBox();
             this.lbl_fanta = new System.Windows.Forms.Label();
             this.lbl_icetea = new System.Windows.Forms.Label();
-            this.lal_fanta = new System.Windows.Forms.Label();
+            this.lbl_spezi = new System.Windows.Forms.Label();
             this.lbl_sprite = new System.Windows.Forms.Label();
             this.lbl_water = new System.Windows.Forms.Label();
             this.lbl_cola = new System.Windows.Forms.Label();
@@ -78,6 +78,7 @@
             this.pb_cola.TabIndex = 1;
             this.pb_cola.TabStop = false;
             this.pb_cola.Click += new System.EventHandler(this.pb_cola_Click);
+            this.pb_cola.DoubleClick += new System.EventHandler(this.pb_cola_DoubleClick);
             // 
             // pb_fanta
             // 
@@ -90,6 +91,7 @@
             this.pb_fanta.TabIndex = 2;
             this.pb_fanta.TabStop = false;
             this.pb_fanta.Click += new System.EventHandler(this.pb_fanta_Click);
+            this.pb_fanta.DoubleClick += new System.EventHandler(this.pb_fanta_DoubleClick);
             // 
             // pb_icetea
             // 
@@ -102,6 +104,7 @@
             this.pb_icetea.TabIndex = 3;
             this.pb_icetea.TabStop = false;
             this.pb_icetea.Click += new System.EventHandler(this.pb_icetea_Click);
+            this.pb_icetea.DoubleClick += new System.EventHandler(this.pb_icetea_DoubleClick);
             // 
             // pb_spezi
             // 
@@ -114,6 +117,7 @@
             this.pb_spezi.TabIndex = 4;
             this.pb_spezi.TabStop = false;
             this.pb_spezi.Click += new System.EventHandler(this.pb_spezi_Click);
+            this.pb_spezi.DoubleClick += new System.EventHandler(this.pb_spezi_DoubleClick);
             // 
             // pb_sprite
             // 
@@ -126,6 +130,7 @@
             this.pb_sprite.TabIndex = 5;
             this.pb_sprite.TabStop = false;
             this.pb_sprite.Click += new System.EventHandler(this.pb_sprite_Click);
+            this.pb_sprite.DoubleClick += new System.EventHandler(this.pb_sprite_DoubleClick);
             // 
             // pb_water
             // 
@@ -138,6 +143,7 @@
             this.pb_water.TabIndex = 6;
             this.pb_water.TabStop = false;
             this.pb_water.Click += new System.EventHandler(this.pb_water_Click);
+            this.pb_water.DoubleClick += new System.EventHandler(this.pb_water_DoubleClick);
             // 
             // lbl_fanta
             // 
@@ -146,6 +152,7 @@
             this.lbl_fanta.Name = "lbl_fanta";
             this.lbl_fanta.Size = new System.Drawing.Size(35, 28);
             this.lbl_fanta.TabIndex = 8;
+            this.lbl_fanta.Click += new System.EventHandler(this.lbl_fanta_Click);
             // 
             // lbl_icetea
             // 
@@ -154,14 +161,16 @@
             this.lbl_icetea.Name = "lbl_icetea";
             this.lbl_icetea.Size = new System.Drawing.Size(35, 27);
             this.lbl_icetea.TabIndex = 9;
+            this.lbl_icetea.Click += new System.EventHandler(this.lbl_icetea_Click);
             // 
-            // lal_fanta
+            // lbl_spezi
             // 
-            this.lal_fanta.BackColor = System.Drawing.Color.Lime;
-            this.lal_fanta.Location = new System.Drawing.Point(118, 288);
-            this.lal_fanta.Name = "lal_fanta";
-            this.lal_fanta.Size = new System.Drawing.Size(35, 27);
-            this.lal_fanta.TabIndex = 10;
+            this.lbl_spezi.BackColor = System.Drawing.Color.Lime;
+            this.lbl_spezi.Location = new System.Drawing.Point(118, 288);
+            this.lbl_spezi.Name = "lbl_spezi";
+            this.lbl_spezi.Size = new System.Drawing.Size(35, 27);
+            this.lbl_spezi.TabIndex = 10;
+            this.lbl_spezi.Click += new System.EventHandler(this.lbl_spezi_Click);
             // 
             // lbl_sprite
             // 
@@ -170,6 +179,7 @@
             this.lbl_sprite.Name = "lbl_sprite";
             this.lbl_sprite.Size = new System.Drawing.Size(35, 31);
             this.lbl_sprite.TabIndex = 11;
+            this.lbl_sprite.Click += new System.EventHandler(this.lbl_sprite_Click);
             // 
             // lbl_water
             // 
@@ -178,6 +188,7 @@
             this.lbl_water.Name = "lbl_water";
             this.lbl_water.Size = new System.Drawing.Size(35, 30);
             this.lbl_water.TabIndex = 12;
+            this.lbl_water.Click += new System.EventHandler(this.lbl_water_Click);
             // 
             // lbl_cola
             // 
@@ -186,6 +197,7 @@
             this.lbl_cola.Name = "lbl_cola";
             this.lbl_cola.Size = new System.Drawing.Size(35, 29);
             this.lbl_cola.TabIndex = 13;
+            this.lbl_cola.Click += new System.EventHandler(this.lbl_cola_Click);
             // 
             // lbl_kontostand
             // 
@@ -197,6 +209,7 @@
             this.lbl_kontostand.Size = new System.Drawing.Size(129, 23);
             this.lbl_kontostand.TabIndex = 14;
             this.lbl_kontostand.Text = "Kontostand = 0.00€";
+            this.lbl_kontostand.Click += new System.EventHandler(this.lbl_kontostand_Click);
             // 
             // btn_20c
             // 
@@ -207,6 +220,7 @@
             this.btn_20c.TabIndex = 15;
             this.btn_20c.Text = "20c";
             this.btn_20c.UseVisualStyleBackColor = true;
+            this.btn_20c.Click += new System.EventHandler(this.btn_20c_Click);
             // 
             // btn_100c
             // 
@@ -216,6 +230,7 @@
             this.btn_100c.TabIndex = 16;
             this.btn_100c.Text = "1€";
             this.btn_100c.UseVisualStyleBackColor = true;
+            this.btn_100c.Click += new System.EventHandler(this.btn_100c_Click);
             // 
             // btn_200c
             // 
@@ -225,6 +240,7 @@
             this.btn_200c.TabIndex = 17;
             this.btn_200c.Text = "2€";
             this.btn_200c.UseVisualStyleBackColor = true;
+            this.btn_200c.Click += new System.EventHandler(this.btn_200c_Click);
             // 
             // btn_50c
             // 
@@ -235,6 +251,7 @@
             this.btn_50c.TabIndex = 18;
             this.btn_50c.Text = "50c";
             this.btn_50c.UseVisualStyleBackColor = true;
+            this.btn_50c.Click += new System.EventHandler(this.btn_50c_Click);
             // 
             // btn_5c
             // 
@@ -245,6 +262,7 @@
             this.btn_5c.TabIndex = 19;
             this.btn_5c.Text = "5c";
             this.btn_5c.UseVisualStyleBackColor = true;
+            this.btn_5c.Click += new System.EventHandler(this.btn_5c_Click);
             // 
             // btn_10c
             // 
@@ -255,6 +273,7 @@
             this.btn_10c.TabIndex = 20;
             this.btn_10c.Text = "10c";
             this.btn_10c.UseVisualStyleBackColor = true;
+            this.btn_10c.Click += new System.EventHandler(this.btn_10c_Click);
             // 
             // Form1
             // 
@@ -272,7 +291,7 @@
             this.Controls.Add(this.lbl_cola);
             this.Controls.Add(this.lbl_water);
             this.Controls.Add(this.lbl_sprite);
-            this.Controls.Add(this.lal_fanta);
+            this.Controls.Add(this.lbl_spezi);
             this.Controls.Add(this.lbl_icetea);
             this.Controls.Add(this.lbl_fanta);
             this.Controls.Add(this.pb_water);
@@ -304,7 +323,7 @@
         private System.Windows.Forms.PictureBox pb_water;
         private System.Windows.Forms.Label lbl_fanta;
         private System.Windows.Forms.Label lbl_icetea;
-        private System.Windows.Forms.Label lal_fanta;
+        private System.Windows.Forms.Label lbl_spezi;
         private System.Windows.Forms.Label lbl_sprite;
         private System.Windows.Forms.Label lbl_water;
         private System.Windows.Forms.Label lbl_cola;

@@ -327,5 +327,11 @@ namespace Getränkeautomat
 
         }
 
+        private void btn_restgeld_Click(object sender, EventArgs e)
+        {
+            geld.restgeldausgeben();
+            lbl_kontostand.Text = "Kontostand = " + geld.getKontostand() + "€";
+        }
+
     }
 }

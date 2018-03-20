@@ -49,6 +49,7 @@
             this.btn_50c = new System.Windows.Forms.Button();
             this.btn_5c = new System.Windows.Forms.Button();
             this.btn_10c = new System.Windows.Forms.Button();
+            this.btn_restgeld = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_fanta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_icetea)).BeginInit();
@@ -275,12 +276,23 @@
             this.btn_10c.UseVisualStyleBackColor = true;
             this.btn_10c.Click += new System.EventHandler(this.btn_10c_Click);
             // 
+            // btn_restgeld
+            // 
+            this.btn_restgeld.Location = new System.Drawing.Point(207, 164);
+            this.btn_restgeld.Name = "btn_restgeld";
+            this.btn_restgeld.Size = new System.Drawing.Size(75, 23);
+            this.btn_restgeld.TabIndex = 21;
+            this.btn_restgeld.Text = "Restgeld";
+            this.btn_restgeld.UseVisualStyleBackColor = true;
+            this.btn_restgeld.Click += new System.EventHandler(this.btn_restgeld_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(321, 522);
+            this.Controls.Add(this.btn_restgeld);
             this.Controls.Add(this.btn_10c);
             this.Controls.Add(this.btn_5c);
             this.Controls.Add(this.btn_50c);
@@ -334,6 +346,7 @@
         private System.Windows.Forms.Button btn_50c;
         private System.Windows.Forms.Button btn_5c;
         private System.Windows.Forms.Button btn_10c;
+        private System.Windows.Forms.Button btn_restgeld;
     }
 }
 
